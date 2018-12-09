@@ -1,13 +1,12 @@
-package pl.sdacademy.annotations;
+package pl.sdacademy.ownannotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface MyClassAnnotation {
-    String author();
-    //String value() default "Paweł";
+public @interface BenchmarkTime {
+
 }

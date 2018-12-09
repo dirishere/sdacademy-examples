@@ -10,6 +10,8 @@ import java.lang.reflect.Method;
 public class AnnotationTest {
     public static void main(String[] args) {
 
+        //API Reflexive - pytania o klasę (adnotacji) w czasie runtime
+
         Class<User> userObj = User.class;
         //adnotacje klasy
         if(userObj.isAnnotationPresent(MyClassAnnotation.class)) {
