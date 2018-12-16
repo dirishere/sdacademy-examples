@@ -6,9 +6,11 @@ import java.util.Scanner;
 public class CommandLineRunner {
 
   private UrlDownloader downloader;
+  private Executor executor;
 
-  public CommandLineRunner(UrlDownloader downloader){
+  public CommandLineRunner(UrlDownloader downloader, Executor executor){
     this.downloader = downloader;
+    this.executor = executor;
   }
 
   void run(InputStream inputStream) {
@@ -26,7 +28,10 @@ public class CommandLineRunner {
   }
 
   private void downloadURL(String command) {
-    Thread thread = new Thread(() -> downloader.download(command));
-    thread.start();
+    //Thread thread = new Thread(() -> downloader.download(command));
+    //thread.start();
+    executor.execute(() -> downloader.download(command), () -> {
+      System.out.println("File downloaded.");
+    });
   }
 }

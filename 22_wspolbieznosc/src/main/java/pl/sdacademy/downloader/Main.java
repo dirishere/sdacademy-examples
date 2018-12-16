@@ -7,7 +7,7 @@ public class Main {
     );
     commandLine.run(System.in);**/
 
-    CommandLineRunner commandLine = new CommandLineRunner(new FileDownloader());
+    CommandLineRunner commandLine = new CommandLineRunner(new FileDownloader(), new NewThreadExecutor());
     commandLine.run(System.in);
   }
 }

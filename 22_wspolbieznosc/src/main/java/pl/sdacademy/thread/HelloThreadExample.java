@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.thread;
 
 //proces to program; proces zakończy się kiedy zakończy się ostatni wątek danego procesu
 //jeden proces ma (może mieć) wiele wątków
