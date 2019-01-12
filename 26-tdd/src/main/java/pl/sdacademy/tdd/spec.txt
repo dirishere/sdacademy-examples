@@ -1,0 +1,9 @@
+Program, który podaje długość łańcucha String.
+Jeśli String:
+//- zaczyna się na A to podaje liczbę znaków;
+//- zaczyna się na B to podaje liczbę znaków bez spacji;
+//- zaczyna się na C to podaję liczbę słów przy założeniu, że są oddzielone pojedynczą spacją
+    zaczyna się na C j/w ale przy założeniu, że oddzielone są dowoloną ilość spacji
+//- zaczyna się na D to zwraca 5;
+//- zaczyna się na E sprawdź czy suma jest liczbą pierwszą.
+//- zaczyna się na * / (A,B,C,D,E) to zwraca "Japko.";

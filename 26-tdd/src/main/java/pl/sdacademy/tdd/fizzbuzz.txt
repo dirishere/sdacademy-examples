@@ -1,0 +1,5 @@
+I want to have a function, that works like this:
+- when I give any number inside it, then the function returns "Fizz", when number is divissible by 2
+- when 5 return "Buzz"
+- when 3 and 5 return "FizzBuzz"
+- in other case - return the same number.
